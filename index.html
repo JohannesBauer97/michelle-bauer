@@ -8,6 +8,26 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <div id="vanta"></div>
 
+    <script src="three.min.js"></script>
+    <script src="vanta.birds.min.js"></script>
+    <script>
+        VANTA.BIRDS({
+            el: '#vanta',
+            THREE: THREE,
+            backgroundColor: 0xfff5f5,
+            color1: 0xffd6d6,
+            color2: 0xffb3b3,
+            colorMode: 'lerp',
+            birdSize: 1.5,
+            wingSpan: 28,
+            speedLimit: 4,
+            separation: 60,
+            alignment: 50,
+            cohesion: 50,
+            quantity: 3
+        });
+    </script>
 </body>
 </html>
